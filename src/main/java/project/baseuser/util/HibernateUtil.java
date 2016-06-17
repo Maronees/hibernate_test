@@ -21,7 +21,7 @@ public class HibernateUtil {
 		try {
 			session = new Configuration().configure().buildSessionFactory();
 		} catch(Throwable error) {
-			throw new ExceptionInInitializerError("sad");
+			throw new ExceptionInInitializerError(error);
 		}
 	}
 	
